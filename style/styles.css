@@ -1,16 +1,48 @@
 /*General Elements*/
 body{
-    font-family: Arial;
+    font-family: Arial, Helvetica,sans-serif;
+    padding: 5px;
+    margin: 0 auto;
+    width: 980px;
 }
 article ,aside  {
     width:50%;
     float :left;
 }
 
+@media (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+    article ,aside  {
+        clear: both;
+        float :left;
+    }
+
+
+}
+
+li{
+    margin: 5px 0;
+}
+
 /*Elements By Id*/
 #divPicture {
     width: 300px;
     height:200px; 
-    border: solid 1px green;
+    background-image: url("../images/photo.jpeg");
+    background-repeat: no-repeat;
+}
+
+/*Elments by class*/
+.ulGeneralContent{
+    margin-left: 0;
+    list-style-type: none;
+    float: left;
+    padding: 0;
+}
+
+.skill{
+   font-weight: bold; 
 }
 
